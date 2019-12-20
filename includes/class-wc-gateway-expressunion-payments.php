@@ -16,9 +16,9 @@ class WC_Gateway_EU extends WC_Payment_Gateway {}
 <input type="hidden" name="phonenumber" value="" />
 <input type="hidden" name="purchaseref" value="<?php $json = json_decode($_GET["custom"], true); echo $json['order_id']; ?>" />
 <input type="hidden" name="description" value="Description" />
-<input type="hidden" name="returnurl" value="<?php echo $_GET["return"]; ?>" />
+<input type="hidden" name="accepturl" value="<?php echo $_GET["return"]; ?>" />
 <input type="hidden" name="cancelurl" value="<?php echo $_GET["cancel_return"]; ?>" />
-<input type="hidden" name="accepturl" value="<?php echo $_GET["notify_url"]; ?>" />
+<input type="hidden" name="declineurl" value="<?php echo $_GET["cancel_return"]; ?>" />
 <input type="hidden" name="text" value="<?php echo $_GET["text"]; ?>" />
 <input type="hidden" name="language" value="fr" /> 
 

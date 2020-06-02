@@ -104,7 +104,7 @@ class WC_Gateway_EU_Request {
 				'country'       => $this->limit_length( $order->get_billing_country(), 2 ),
 				'email'         => $this->limit_length( $order->get_billing_email() ),
 				'urlafrikpay'    => esc_url_raw( $this->gateway->get_option( 'urlafrikpay' )),	
-				'merchantid'    => $this->gateway->get_option( 'merchantid' ),
+				'store'    => $this->gateway->get_option( 'store' ),
 				'expressunion'    => true,
 				'totalamount'    =>  $this->getTotalamount($order),
 				'text'            => $this->getText($order)
